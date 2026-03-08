@@ -1,13 +1,167 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* RESET */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto',
+  'Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans',
+  'Helvetica Neue',sans-serif;
+
+  background:#0f172a;
+  color:#e5e7eb;
+}
+
+/* SMOOTH SCROLL */
+
+html{
+  scroll-behavior:smooth;
+}
+
+/* SECTION SPACING */
+
+section{
+  padding:100px 20px;
+}
+
+/* HEADINGS */
+
+h1{
+  font-size:42px;
+  font-weight:700;
+}
+
+h2{
+  font-size:28px;
+  font-weight:600;
+}
+
+/* LINKS */
+
+a{
+  color:#38bdf8;
+  text-decoration:none;
+  font-weight:500;
+}
+
+a:hover{
+  color:#a855f7;
+}
+
+/* NAVBAR */
+
+nav a{
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+/* HERO BUTTONS */
+
+.hero-buttons a{
+  margin:10px;
+  padding:12px 22px;
+  border-radius:8px;
+  font-weight:600;
+  display:inline-block;
+  transition:0.3s;
+}
+
+.hero-buttons a:hover{
+  transform:translateY(-3px);
+}
+
+/* RESUME BUTTON */
+
+.resume-btn{
+  background:#22c55e;
+  color:white;
+}
+
+.resume-btn:hover{
+  background:#16a34a;
+}
+
+/* PROJECT CARDS */
+
+.project-card{
+  background:#1e293b;
+  color:white;
+  padding:25px;
+  border-radius:12px;
+  transition:0.3s;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.project-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* PROJECT IMAGES */
+
+.project-card img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+/* SKILLS */
+
+#skills div{
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#skills div:hover{
+  transform:scale(1.15);
+  color:#38bdf8;
+}
+
+/* CONTACT SECTION */
+
+#contact{
+  background:#020617;
+  color:white;
+}
+
+#contact a{
+  color:#38bdf8;
+}
+
+#contact a:hover{
+  color:#a855f7;
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#020617;
+  color:#94a3b8;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  section{
+    padding:70px 20px;
+  }
+
+  h1{
+    font-size:32px;
+  }
+
 }
